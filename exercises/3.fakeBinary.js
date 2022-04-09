@@ -5,28 +5,27 @@ Given a string of digits, you should replace any digit below 5 with '0' and any 
 Note: input will never be an empty string
 */
 
-function fakeBin(x){
-    let res = "";
-    for(let i = 0; i < x.length; i++)
-      {
-        if(x.charAt(i) < 5)
-          { 
-            res += "0"
-          }
-        else
-          {
-            res += "1"
-          }
-      }
-      return res;
-  }
-
-// Best
+// My solution
 
 function fakeBin(x) {
-    return x.split('').map(n => n < 5 ? 0 : 1).join('');
+  let res = "";
+  for (let i = 0; i < x.length; i++) {
+    if (x.charAt(i) < 5) {
+      res += "0"
+    }
+    else {
+      res += "1"
+    }
+  }
+  return res;
+}
+
+// Best Codewars solutions
+
+function fakeBin(x) {
+  return x.split('').map(n => n < 5 ? 0 : 1).join('');
 }
 
 function fakeBin(x) {
-    return x.replace(/\d/g, d => d < 5 ? 0 : 1);
-  }
+  return x.replace(/\d/g, d => d < 5 ? 0 : 1);
+}

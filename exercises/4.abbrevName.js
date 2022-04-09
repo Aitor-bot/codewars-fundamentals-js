@@ -11,6 +11,8 @@ Sam Harris => S.H
 patrick feeney => P.F
 */
 
+// My solution
+
 function abbrevName(name) {
 
   const firstWord = name.charAt(0);
@@ -19,7 +21,7 @@ function abbrevName(name) {
   return res;
 }
 
-//Best
+// Best Codewars solution
 
 function abbrevName(name){
 
