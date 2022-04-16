@@ -23,4 +23,6 @@ const stringToNumber = (str) => {
 
 // Best Codewars solution
 
-
+let stringToNumbe = function(str){
+    return parseInt(str);
+  }
